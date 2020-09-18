@@ -1,0 +1,8 @@
+fastai-dir/
+data/
+archive/
+.cache/
+.bash_history
+.ipython/
+.local/
+.fastai/
