@@ -2,8 +2,6 @@ FROM pytorch/pytorch:1.6.0-cuda10.1-cudnn7-runtime
 
 ARG BUILD=dev
 
-#RUN apt-get install -y apt-transport-https
-
 RUN apt-get update && apt-get install -y software-properties-common rsync
 
 RUN add-apt-repository -y ppa:git-core/ppa && apt-get update && apt-get install -y git libglib2.0-dev && apt-get update
