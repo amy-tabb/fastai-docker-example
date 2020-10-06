@@ -7,3 +7,4 @@ fastai-dir/
 .config/
 .fastai/
 .nv/
+.jupyter/
