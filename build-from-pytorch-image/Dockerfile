@@ -6,12 +6,6 @@ RUN apt-get update && apt-get install -y software-properties-common rsync
 
 RUN add-apt-repository -y ppa:git-core/ppa && apt-get update && apt-get install -y git libglib2.0-dev && apt-get update
 
-RUN apt-get update
-
-RUN apt-get install -y software-properties-common rsync
-
-RUN apt-get -y install git libglib2.0-dev && apt-get update
-
 RUN apt-get -y install nano\
    graphviz \
    libwebp-dev
@@ -38,13 +32,11 @@ RUN pip install albumentations \
     "sentencepiece<0.1.90" \
     spacy \
     tensorboard \
-    wandb
-
-RUN pip install kaggle \
+    wandb \
+    kaggle \
     dtreeviz \
-    treeinterpreter
-
-RUN pip install waterfallcharts
+    treeinterpreter \
+    waterfallcharts
 
 RUN git clone https://github.com/fastai/fastai.git --depth 1  && git clone https://github.com/fastai/fastcore.git --depth 1
 
